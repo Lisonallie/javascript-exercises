@@ -8,9 +8,8 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+let greeting = "Hello World";
 
-(function() {
-
-    // your code here
-
+(function greet() {
+    alert(greeting)
 })();
