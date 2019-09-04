@@ -8,9 +8,10 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+let name = document.getElementById("name");
 
-(function() {
-
-    // your code here
-
-})();
+name.addEventListener("keypress", function greet(e) {
+    if (e.keyCode == 13 || e.which == 13) {
+        alert("Hello," + " " + name.value + "!");
+    }
+});
