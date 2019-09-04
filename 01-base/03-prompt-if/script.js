@@ -8,9 +8,13 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
-(function() {
-
-  // your code here
-
+let textHolder = document.getElementById("ask");
+console.log(textHolder);
+(function ask() {
+  if (confirm("Do you want some cake?")) {
+    text = "Congratulations, you get cake!"
+  } else {
+    text = "More cake for me then :p !"
+  }
+  textHolder.innerHTML = text;
 })();
